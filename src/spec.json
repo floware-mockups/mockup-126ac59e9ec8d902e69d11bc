@@ -1,0 +1,433 @@
+{
+  "title": "Gestione prenotazioni delle sale",
+  "description": "Prototipo per consultare il calendario settimanale, verificare le disponibilità e registrare prenotazioni di sale riunioni con dati di prova inventati.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Riepilogo delle prenotazioni della settimana e delle sale disponibili.",
+      "metrics": [
+        {
+          "label": "Sale disponibili",
+          "value": "4"
+        },
+        {
+          "label": "Prenotazioni settimana",
+          "value": "18"
+        },
+        {
+          "label": "Oggi",
+          "value": "5"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "32"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Sala",
+        "Fascia oraria",
+        "Richiedente",
+        "Ufficio",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lunedì",
+          "Lumo",
+          "09:00–10:00",
+          "Nubi",
+          "Ufficio Aurora",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "Vela",
+          "11:00–12:30",
+          "Riva",
+          "Ufficio Bruma",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "Nubi",
+          "14:00–15:00",
+          "Timo",
+          "Ufficio Lieve",
+          "In attesa"
+        ],
+        [
+          "Mercoledì",
+          "Lumo",
+          "10:00–11:00",
+          "Mira",
+          "Ufficio Aurora",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "Vela",
+          "09:30–11:00",
+          "Soli",
+          "Ufficio Bruma",
+          "Confermata"
+        ],
+        [
+          "Venerdì",
+          "Nubi",
+          "13:00–14:00",
+          "Leda",
+          "Ufficio Lieve",
+          "In attesa"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario-settimanale",
+      "title": "Calendario settimanale",
+      "description": "Consulta le occupazioni per giorno e fascia oraria. Le tabelle possono essere filtrate per sala, giorno e stato.",
+      "metrics": [
+        {
+          "label": "Settimana",
+          "value": "12–16 maggio"
+        },
+        {
+          "label": "Prenotazioni",
+          "value": "18"
+        },
+        {
+          "label": "Sale in uso",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Giorno",
+        "Data",
+        "Orario",
+        "Sala",
+        "Richiedente",
+        "Ufficio",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lunedì",
+          "12 maggio",
+          "09:00–10:00",
+          "Lumo",
+          "Nubi",
+          "Ufficio Aurora",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "12 maggio",
+          "11:00–12:30",
+          "Vela",
+          "Riva",
+          "Ufficio Bruma",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Lunedì",
+          "12 maggio",
+          "14:00–15:00",
+          "Timo",
+          "Ufficio Lieve",
+          "Ufficio Lieve",
+          "4",
+          "In attesa"
+        ],
+        [
+          "Martedì",
+          "13 maggio",
+          "09:00–10:30",
+          "Nubi",
+          "Mira",
+          "Ufficio Aurora",
+          "7",
+          "Confermata"
+        ],
+        [
+          "Martedì",
+          "13 maggio",
+          "14:00–15:00",
+          "Lumo",
+          "Timo",
+          "Ufficio Lieve",
+          "5",
+          "In attesa"
+        ],
+        [
+          "Mercoledì",
+          "14 maggio",
+          "10:00–11:00",
+          "Lumo",
+          "Mira",
+          "Ufficio Aurora",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Mercoledì",
+          "14 maggio",
+          "13:30–15:00",
+          "Vela",
+          "Soli",
+          "Ufficio Bruma",
+          "9",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "15 maggio",
+          "09:30–11:00",
+          "Vela",
+          "Soli",
+          "Ufficio Bruma",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Giovedì",
+          "15 maggio",
+          "11:30–12:30",
+          "Nubi",
+          "Leda",
+          "Ufficio Lieve",
+          "5",
+          "Annullata"
+        ],
+        [
+          "Venerdì",
+          "16 maggio",
+          "13:00–14:00",
+          "Nubi",
+          "Leda",
+          "Ufficio Lieve",
+          "4",
+          "In attesa"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "prenotazioni",
+      "title": "Prenotazioni",
+      "description": "Elenco filtrabile delle richieste e delle prenotazioni registrate. Il modulo consente di inserire una nuova prenotazione.",
+      "metrics": [
+        {
+          "label": "Totale",
+          "value": "18"
+        },
+        {
+          "label": "Confermate",
+          "value": "13"
+        },
+        {
+          "label": "In attesa",
+          "value": "3"
+        },
+        {
+          "label": "Annullate",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Richiedente",
+        "Ufficio",
+        "Sala",
+        "Giorno",
+        "Data",
+        "Orario",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Nubi",
+          "Ufficio Aurora",
+          "Lumo",
+          "Lunedì",
+          "12 maggio",
+          "09:00–10:00",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Riva",
+          "Ufficio Bruma",
+          "Vela",
+          "Lunedì",
+          "12 maggio",
+          "11:00–12:30",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Timo",
+          "Ufficio Lieve",
+          "Nubi",
+          "Lunedì",
+          "12 maggio",
+          "14:00–15:00",
+          "4",
+          "In attesa"
+        ],
+        [
+          "Mira",
+          "Ufficio Aurora",
+          "Nubi",
+          "Martedì",
+          "13 maggio",
+          "09:00–10:30",
+          "7",
+          "Confermata"
+        ],
+        [
+          "Timo",
+          "Ufficio Lieve",
+          "Lumo",
+          "Martedì",
+          "13 maggio",
+          "14:00–15:00",
+          "5",
+          "In attesa"
+        ],
+        [
+          "Mira",
+          "Ufficio Aurora",
+          "Lumo",
+          "Mercoledì",
+          "14 maggio",
+          "10:00–11:00",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Soli",
+          "Ufficio Bruma",
+          "Vela",
+          "Mercoledì",
+          "14 maggio",
+          "13:30–15:00",
+          "9",
+          "Confermata"
+        ],
+        [
+          "Leda",
+          "Ufficio Lieve",
+          "Nubi",
+          "Giovedì",
+          "15 maggio",
+          "11:30–12:30",
+          "5",
+          "Annullata"
+        ],
+        [
+          "Soli",
+          "Ufficio Bruma",
+          "Vela",
+          "Giovedì",
+          "15 maggio",
+          "09:30–11:00",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Leda",
+          "Ufficio Lieve",
+          "Nubi",
+          "Venerdì",
+          "16 maggio",
+          "13:00–14:00",
+          "4",
+          "In attesa"
+        ]
+      ],
+      "form": [
+        "Richiedente",
+        "Ufficio",
+        "Sala",
+        "Giorno",
+        "Data",
+        "Orario",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "sale",
+      "title": "Sale riunioni",
+      "description": "Consulta le caratteristiche delle sale e la loro disponibilità abituale. Filtra la tabella per nome o capienza.",
+      "metrics": [
+        {
+          "label": "Sale registrate",
+          "value": "4"
+        },
+        {
+          "label": "Capienza totale",
+          "value": "34"
+        },
+        {
+          "label": "Sale attrezzate",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Capienza",
+        "Piano",
+        "Dotazioni",
+        "Accessibilità",
+        "Disponibilità",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "10",
+          "1",
+          "Schermo, lavagna",
+          "Accessibile",
+          "Lun–Ven, 08:00–18:00",
+          "Disponibile"
+        ],
+        [
+          "Vela",
+          "12",
+          "2",
+          "Schermo, videoconferenza",
+          "Accessibile",
+          "Lun–Ven, 08:00–18:00",
+          "Disponibile"
+        ],
+        [
+          "Nubi",
+          "6",
+          "1",
+          "Lavagna",
+          "Accessibile",
+          "Lun–Ven, 09:00–17:00",
+          "Disponibile"
+        ],
+        [
+          "Riva",
+          "6",
+          "3",
+          "Tavolo modulare",
+          "Non accessibile",
+          "Lun–Gio, 09:00–16:00",
+          "In manutenzione"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
